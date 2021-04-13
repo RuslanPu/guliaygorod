@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="no-js" lang="ru">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="assets/libs/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Map -->
+
+
+
+    <link rel="stylesheet" href="assets/css/theme-sans-serif.min.css" id="themeSansSerif" disabled>
+
+
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Гуляй Город</title>
+
+
+
+
+</head>
+<body>
+<!-- MODALS -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Связаться с нами</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Ваш email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Мы не передаем данные 3 лицам</div>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<div class="container-lg">
+    <div class="row justify-content-center">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding: 1.1rem 1rem;">
+
+            <div class="col-1 for-mob"></div>
+            <div class="col-10 d-flex fordesctop" style="padding-left: 0;
+          padding-right: 0;">
+                <a class="navbar-brand" href="#" style="width: 70%">
+                    <img src="assets/img/logo.jpg" alt="" width="50%">
+                </a>
+                <div class="d-flex flex-column align-self-center contact-data">
+                    <div class="justify-content-end phone">
+                        <a href="tel:+79652582424" style="color: #58adea"><i class="fa fa-mobile" aria-hidden="true" style="padding-right: 5px;"></i> +7 (965) 258-24-24</a>
+                    </div>
+                    <div class="justify-content-end mail">
+                        <a href="mailto:ggquestmsk@gamil.com" style="color: #58adea"><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i>ggquestmsk@gamil.com</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-12 d-flex formobile" style="padding-left: 0;
+          padding-right: 0;">
+                <a class="navbar-brand" href="#" >
+                    <img src="assets/img/logo.jpg" >
+                </a>
+                <div class="d-flex flex-column align-self-center contact-data">
+                    <div class=" phone">
+                        <a href="tel:+79652582424" style="color: #58adea"><i class="fa fa-mobile" aria-hidden="true" style="padding-right: 5px;"></i> +7 (965) 258-24-24</a>
+                    </div>
+                    <div class=" mail">
+                        <!-- <a href="mailto:ggquestmsk@gamil.com" style="color: #58adea"><i class="fa fa-envelope notnewstr" aria-hidden="true" style="padding-right: 5px;"></i> </a>  -->
+                        <a href="mailto:ggquestmsk@gamil.com" style="color: #58adea"><i class="fa fa-envelope"></i> ggquestmsk@gamil.com</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-1 for-mob"></div>
+
+
+
+        </nav>
+    </div>
+</div>
+
+<!-- main -->
+<div class="container">
+    <div class="row mb-8">
+        <div class="col-5">
+            <img src="assets/img/kinder.jpg" class="img-fluid img-thumbnail" alt="">
+
+        </div>
+        <div class="col-7">
+            <h1>Праздники</h1>
+            <p class="descCategory">
+                Воплотим идею в жизнь или предоставим на выбор готовые сценарии праздника. Красиво поздравить женщин на 8 марта, защитников на 23 февраля.
+                <br> Готовые сценарии:
+                <br>   -Новый Год
+                <br> -23 февраля
+                <br> -8 марта
+                <br> -масленница
+                <br> -Рождество
+                <br> -день защиты детей
+                <br> И многое другое!
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row mb-8">
+        <div class="col-7">
+            <h1>Классный час</h1>
+            <p class="descCategory">
+                Устроим историческое шоу, с использованием аутентичного реквизита, для детей. В игровой форме разберем историческую эпоху по школьной программе.
+            </p>
+
+        </div>
+        <div class="col-5">
+            <img src="assets/img/roomhour.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+    </div>
+
+    <div class="row mb-8">
+        <div class="col-5">
+            <img src="assets/img/birthday.jpg" class="img-fluid img-thumbnail" alt="">
+
+        </div>
+        <div class="col-7">
+            <h1>Дни Рождения</h1>
+            <p class="descCategory">
+
+                День Рождения ребёнка и Ваш праздник тоже!
+                Организуем детский выездной квест для детей от 7 лет.
+                Отмечайте с ребенком вместо хлопот.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row mb-8">
+        <div class="col-7">
+            <h1>Выпускной</h1>
+            <p class="descCategory">
+
+                Впервые на рынке!
+                Проводим тематические выпускные в средневековом стиле.Необычный и запоминающийся выпускной, ведущие, фото-видео съемка, костюмированный персонал , программы на 4й 9й и 11й классы.
+            </p>
+
+        </div>
+        <div class="col-5">
+            <img src="assets/img/vypusknoy.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+    </div>
+
+    <div class="row mb-8">
+        <div class="col-5">
+            <img src="assets/img/photosession.jpg" class="img-fluid img-thumbnail" alt="">
+
+        </div>
+        <div class="col-7">
+            <h1>фотосессия</h1>
+            <p class="descCategory">
+
+
+                Фотограф на детском празднике нужен для того, чтобы запечатлеть лучшие моменты жизни, выбрать правильный ракурс для съёмки, сфотографировать детей в нужный момент и передать на фото эмоции.
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row mb-8">
+        <div class="col-7">
+            <h1>Мастер-классы</h1>
+            <p class="descCategory">
+                Средневековые ремесла:
+                Во время мастер класса мы погрузимся в историю средневековых ремесел. Создадим украшения, отчеканим монету, как это делали в старину, сваляем детскую игрушку. Наши мастера-ремесленники в игровой форме расскажут о роли своего ремесла в истории.
+                <br>
+                Ремесла:
+                <br> -изготовление украшений
+                <br> -кожевенное дело
+                <br> -шитье
+                <br> -выжигание
+                <br> -художественная резьба
+                <br> -плетение
+                <br> -валяние
+                <br> -литье фигурок
+                <br> -чеканка монет
+            </p>
+
+        </div>
+        <div class="col-5">
+            <img src="assets/img/masterclass.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+    </div>
+
+</div>
+<div class="row justify-content-center">
+    <div class="col text-center mb-10">
+        <a class="btn btn-primary lift" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Связаться
+        </a>
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer py-8 py-md-11 bg-dark border-top border-gray-900" style="padding-top: 1rem!important; padding-bottom: 1rem!important;">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-4">
+
+
+                <!-- Text -->
+                <h6 class="text-uppercase text-white mb-3 mb-md-5">Связаться с нами</h6>
+                <p class="text-white-60">
+                    По телефону:
+                    <br>
+                    +7(965)-258-24-24
+                    <br>
+                    E-mail:
+                    <br>
+                    ggquestmsk@gmail.com
+                    <br>
+                    <a href="https://www.instagram.com/gg_quest/" class="footerlinkcolor"><i class="fa fa-instagram"></i>Instagram</a>
+
+
+
+                    <br>
+                    <a href="https://vk.com/gg_quest" class="footerlinkcolor"><i class="fa fa-vk"></i>Вконтакте</a>
+
+                </p>
+
+            </div>
+            <div class="col-6 col-md">
+
+                <!-- Heading -->
+                <h6 class="text-uppercase text-white mb-3 mb-md-5">
+                    Страницы
+                </h6>
+
+                <!-- List -->
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a class="text-white-60" href="#!">О Нас</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-white-60" href="#!">Наши партнеры</a>
+                    </li>
+                    <li>
+                        <a class="text-white-60" href="#!">Наши площадки</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-6 col-md">
+
+                <!-- Heading -->
+                <h6 class="text-uppercase text-white mb-3 mb-md-5">
+                    Каталог праздников
+                </h6>
+
+                <!-- List -->
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a class="text-white-60" href="#!">Тимбилдинг</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-white-60" href="#!">Детские</a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-white-60" href="#!">Взрослые</a>
+                    </li>
+                    <li>
+                        <a class="text-white-60" href="#!">Школы</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-6 col-md">
+
+                <!-- Heading -->
+                <h6 class="text-uppercase text-white mb-3 mb-md-5">
+                    Сотрудничество
+                </h6>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- Libs JS -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+<script src="assets/libs/aos/dist/aos.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+<script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+<script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+<script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+<script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+<script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+<script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+<script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+<script src="assets/libs/typed.js/lib/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<!-- Theme JS -->
+<script src="assets/js/theme.min.js"></script>
+<script src="js/galery.js"></script>
+
+
+</body>

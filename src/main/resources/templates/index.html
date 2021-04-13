@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="no-js" lang="ru">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="assets/libs/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+  <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+  <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
+  <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
+  <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+  <!-- Map -->
+
+
+
+  <link rel="stylesheet" href="assets/css/theme-sans-serif.min.css" id="themeSansSerif" disabled>
+
+
+
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/css/theme.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Гуляй Город</title>
+
+
+
+
+</head>
+<body>
+
+<!-- MODALS -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Связаться с нами</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Ваше имя</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Ваш email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Мы не передаем данные 3 лицам</div>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<div class="container-lg">
+  <div class="row justify-content-center">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 1.1rem 1rem;">
+
+      <div class="col-1 for-mob"></div>
+      <div class="col-10 d-flex fordesctop" style="padding-left: 0;
+        padding-right: 0;">
+        <a class="navbar-brand" href="#" style="width: 70%">
+          <img src="assets/img/logo.jpg" alt="" width="50%">
+        </a>
+        <div class="d-flex flex-column align-self-center contact-data">
+          <div class="justify-content-end phone">
+            <a href="tel:+79652582424" style="color: #58adea"><i class="fa fa-mobile" aria-hidden="true" style="padding-right: 5px;"></i> +7 (965) 258-24-24</a>
+          </div>
+          <div class="justify-content-end mail">
+            <a href="mailto:ggquestmsk@gamil.com" style="color: #58adea"><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i>ggquestmsk@gamil.com</a>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-12 d-flex formobile" style="padding-left: 0;
+        padding-right: 0;">
+        <a class="navbar-brand" href="#" >
+          <img src="assets/img/logo.jpg" >
+        </a>
+        <div class="d-flex flex-column align-self-center contact-data">
+          <div class=" phone">
+            <a href="tel:+79652582424" style="color: #58adea"><i class="fa fa-mobile" aria-hidden="true" style="padding-right: 5px;"></i> +7 (965) 258-24-24</a>
+          </div>
+          <div class=" mail">
+            <!-- <a href="mailto:ggquestmsk@gamil.com" style="color: #58adea"><i class="fa fa-envelope notnewstr" aria-hidden="true" style="padding-right: 5px;"></i> </a>  -->
+            <a href="mailto:ggquestmsk@gamil.com" style="color: #58adea"><i class="fa fa-envelope"></i> ggquestmsk@gamil.com</a>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-1 for-mob"></div>
+
+
+
+    </nav>
+  </div>
+</div>
+
+
+
+<!-- WELCOME -->
+<section class="pt-6 pt-md-11 pb-8 pb-md-9" style="padding-top:0!important">
+  <div class="container-lg">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-xl-10 text-center">
+
+        <div class="img-1-block">
+          <img src="assets/img/e711f7d2-216f-47ad-a46d-4f203f20b544.jpg" alt="" style="width: 100%">
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 text-center">
+
+        <!-- Text -->
+
+        <pre th:text="${listEntry.get(0).text}" class="textAbout">
+        </pre>
+
+        <!-- Buttons -->
+        <a class="btn btn-primary lift" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Связаться
+        </a>
+        <a class="btn btn-white lift ml-3" href="docs/index.html">
+          <span class="d-sm-none">Docs</span><span class="d-none d-sm-inline-block">Documentation</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- banner -->
+
+
+<div class="container">
+  <div class="row">
+    <h1 class="text-blue text-center">
+      О нас
+    </h1>
+
+    <!-- Text -->
+    <p class="textabout" th:text="${listEntry.get(1).text}">
+      Корпоративы
+      Собрал как то царь-директор все царство-королевство свое. И палату бухгалтерскую и стрельцов-продавцов на пир честной, праздник заслуженный и решил он узнать кто царевну-премию ему привезет. Устроил игрища заморские, квест живой, в стиле рыцарском. Не только застолья ради, а веселья души для.
+      -На пиру у царя все отделы сплотим
+      -музыкантов, певцов пригласим
+      -фото и видео сделаем
+      а пришлем их только заказчику.
+    </p>
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/banner2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/banner3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+
+
+
+<!-- SLIDER -->
+
+
+<!-- SHAPE -->
+<div class="position-relative mt-md-n12">
+  <div class="shape shape-fluid-x shape-bottom text-white">
+    <div class="shape-img pb-9 mb-md-14">
+      <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v50H75L25 25H0z" fill="currentColor"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- SHARED BACKGROUND -->
+<div class="bg-dark" style="background-image: url(assets/img/patterns/pattern-1.svg);">
+
+  <!-- STORIES -->
+  <section class="pt-12 pt-md-16 pb-10 pb-md-12">
+    <div class="container-lg">
+      <div class="row align-items-center justify-content-betwen mb-9">
+        <div class="col-md-7 text-center text-md-left">
+
+          <!-- Heading -->
+          <h2 class="display-4 text-white mb-4 mb-md-0">
+            Выберите ваш праздник
+          </h2>
+
+        </div>
+        <div class="col-md-6 text-center text-md-left">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <!-- Slider -->
+          <div class="flickity-viewport-visible mx-n4" data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+            <div class="col-12" style="max-width: 300px;">
+
+              <!-- Card -->
+              <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                <!-- Image  -->
+                <img class="card-img rounded-top-left" src="assets/img/offer1.jpg" alt="...">
+
+                <!-- SHAPE -->
+                <div class="position-relative">
+                  <div class="shape shape-fluid-x shape-top text-white">
+                    <div class="shape-img pb-4">
+                      <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <div class="d-flex align-items-center mb-3">
+
+                    <!-- Logo -->
+                    Тимбилдинг
+
+                    <!-- Icon -->
+                    <a class="ml-auto text-decoration-none text-digital-ocean stretched-link" href="#!">
+                      <i class="fe fe-arrow-right"></i>
+                    </a>
+
+                  </div>
+
+                  <!-- Text -->
+                  <small>
+                    Живой квест для компании до 100 человек в рыцарском стиле. Организуем праздник под ключ
+                  </small>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-12" style="max-width: 300px;">
+
+              <!-- Card -->
+              <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                <!-- Image  -->
+                <img class="card-img rounded-top-left" src="assets/img/offer2.jpg" alt="...">
+
+                <!-- SHAPE -->
+                <div class="position-relative">
+                  <div class="shape shape-fluid-x shape-top text-white">
+                    <div class="shape-img pb-4">
+                      <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <div class="d-flex align-items-center mb-3">
+
+                    <!-- Logo -->
+                    Детский
+
+                    <!-- Icon -->
+                    <a class="ml-auto text-decoration-none text-airbnb stretched-link" href="#!">
+                      <i class="fe fe-arrow-right"></i>
+                    </a>
+
+                  </div>
+
+                  <!-- Text -->
+                  <small>
+                    Костюмированный живой квест в средневековом стиле приедет к вам
+                  </small>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-12" style="max-width: 300px;">
+
+              <!-- Card -->
+              <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                <!-- Image  -->
+                <img class="card-img rounded-top-left" src="assets/img/offer3.jpg" alt="...">
+
+                <!-- SHAPE -->
+                <div class="position-relative">
+                  <div class="shape shape-fluid-x shape-top text-white">
+                    <div class="shape-img pb-4">
+                      <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <div class="d-flex align-items-center mb-3">
+
+                    <!-- Logo -->
+                    Взрослый
+
+                    <!-- Icon -->
+                    <a class="ml-auto text-decoration-none text-coinbase stretched-link" href="#!">
+                      <i class="fe fe-arrow-right"></i>
+                    </a>
+
+                  </div>
+
+                  <!-- Text -->
+                  <small>
+                    Смешаем зелье с алхимиком-барменом, заставим почувствовать себя королем
+                  </small>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-12" style="max-width: 300px;">
+
+              <!-- Card -->
+              <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                <!-- Image  -->
+                <img class="card-img rounded-top-left" src="assets/img/offer4.jpg" alt="...">
+
+                <!-- SHAPE -->
+                <div class="position-relative">
+                  <div class="shape shape-fluid-x shape-top text-white">
+                    <div class="shape-img pb-4">
+                      <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Body -->
+                <div class="card-body">
+
+                  <!-- Heading -->
+                  <div class="d-flex align-items-center mb-3">
+
+                    <!-- Logo -->
+                    Школы
+
+                    <!-- Icon -->
+                    <a class="ml-auto text-decoration-none text-netflix stretched-link" href="#!">
+                      <i class="fe fe-arrow-right"></i>
+                    </a>
+
+                  </div>
+
+                  <!-- Text -->
+                  <small>
+                    Устроим историческое шоу с использованием аутентичного реквизита. В игровой форме разберем историческую эпоху по школьной программе
+                  </small>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+
+
+</div>
+
+
+
+
+<!-- CASES -->
+<section class="pt-11 pt-md-13 pb-11 pb-md-16" style="background-image: url(assets/img/patterns/pattern-1.svg);">
+  <div class="container">
+    <div class="row">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 text-center">
+
+
+
+          <!-- Heading -->
+          <h2 class="display-4 text-blue mb-9">
+            <span class="text-underline-primary-light">Фотогалерея</span>
+          </h2>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+             data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+             data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+             data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+             data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb galeryitem">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+             data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Another alt text">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <div class="col-xs-12 col-md-12">
+            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modalstformobile">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="image-gallery-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                    </button>
+
+                    <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer py-8 py-md-11 bg-dark border-top border-gray-900" style="padding-top: 1rem!important; padding-bottom: 1rem!important;">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-4">
+
+
+        <!-- Text -->
+        <h6 class="text-uppercase text-white mb-3 mb-md-5">Связаться с нами</h6>
+        <p class="text-white-60">
+          По телефону:
+          <br>
+          +7(965)-258-24-24
+          <br>
+          E-mail:
+          <br>
+          ggquestmsk@gmail.com
+          <br>
+          <a href="https://www.instagram.com/gg_quest/" class="footerlinkcolor"><i class="fa fa-instagram"></i>Instagram</a>
+
+
+
+          <br>
+          <a href="https://vk.com/gg_quest" class="footerlinkcolor"><i class="fa fa-vk"></i>Вконтакте</a>
+
+        </p>
+
+      </div>
+      <div class="col-6 col-md">
+
+        <!-- Heading -->
+        <h6 class="text-uppercase text-white mb-3 mb-md-5">
+          Страницы
+        </h6>
+
+        <!-- List -->
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a class="text-white-60" href="#!">О Нас</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-white-60" href="#!">Наши партнеры</a>
+          </li>
+          <li>
+            <a class="text-white-60" href="#!">Наши площадки</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-6 col-md">
+
+        <!-- Heading -->
+        <h6 class="text-uppercase text-white mb-3 mb-md-5">
+          Каталог праздников
+        </h6>
+
+        <!-- List -->
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a class="text-white-60" href="#!">Тимбилдинг</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-white-60" href="#!">Детские</a>
+          </li>
+          <li class="mb-3">
+            <a class="text-white-60" href="#!">Взрослые</a>
+          </li>
+          <li>
+            <a class="text-white-60" href="#!">Школы</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-6 col-md">
+
+        <!-- Heading -->
+        <h6 class="text-uppercase text-white mb-3 mb-md-5">
+          Сотрудничество
+        </h6>
+
+
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<!-- Polyfills -->
+<script src="../polyfill.io/v3/polyfill.minf25e.js?features=Array.prototype.find,Array.prototype.includes,Array.from,Object.entries,Promise,Object.assign"></script>
+
+<!-- Libs JS -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+<script src="assets/libs/aos/dist/aos.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+<script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+<script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+<script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+<script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+<script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+<script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+<script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+<script src="assets/libs/typed.js/lib/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+<!-- Map -->
+
+<!-- Theme JS -->
+<script src="assets/js/theme.min.js"></script>
+<script src="js/galery.js"></script>
+
+
+</body>
+
+
+</html>

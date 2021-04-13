@@ -1,0 +1,54 @@
+.footerlinkcolor i{
+    margin-right: 0.3rem;
+}
+.textAbout{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #575a7b!important;
+    font-weight: 400;
+    font-family: "DM Sans",sans-serif;
+}
+
+.footerlinkcolor{
+    color:#9b99ac;
+}
+.pt-md-13, .py-md-13 {
+    padding-top: 3rem!important;
+}
+.pt-md-13, .py-md-13 {
+    padding-bottom: 3rem!important;
+}
+.textabout{
+    color:#575a7b;
+    padding: 0 10%;
+}
+.carousel{
+    margin-bottom: 10rem;
+}
+@media screen and (min-width: 200px) and (max-width:649px){
+    .modalstformobile{
+        width:400px;
+    }
+    .carousel{
+        margin-bottom: 0;
+    }
+    .galeryitem{
+        margin: 1rem;
+    }
+    .for-mob{display: none}
+    .navbar-brand img{
+        width: 100%;
+    }
+    .navbar-brand{
+        width: 40% !important;;
+    }
+    .mail a{display: inline;}
+    .notnewstr{display: inline;}
+    .contact-data .phone a,
+    .contact-data .mail a{font-size: 1rem;}
+    .formobile{display: block;}
+    .fordesctop{display: none !important;}
+}
+@media screen and (min-width: 650px){
+    .formobile{display: none !important;}
+}
